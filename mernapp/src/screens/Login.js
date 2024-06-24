@@ -9,7 +9,7 @@ export default function Login() {
   const handleSubmit= async(e) => {
       e.preventDefault();
       console.log(JSON.stringify({ email:credentials.email, password:credentials.password}))
-      const response=await fetch("http://localhost:5000/api/loginuser",{
+      const response=await fetch("http://localhost:5000/api/LoginUser",{
       method:'POST',
       headers:{
           'Content-Type':'application/json'
@@ -26,7 +26,9 @@ export default function Login() {
 
   
   if(json.success){
-    navigate("/")
+    localStorage.setItem("authToken", json.authToken);
+    console.log(localStorage.getItem("authToken"))
+    navigate("/");
 }
 
   }

@@ -45,8 +45,8 @@ const onChange =(event) =>{
     <input type="password" className="form-control" name='password' value={credentials.password} onChange={onChange} id="exampleInputPassword1"/>
   </div>
   <div className="mb-3">
-    <label htmlFor="exampleInputPassword1" className="form-label">Address</label>
-    <input type="text" className="form-control" name='geolocation' value={credentials.geolocation} onChange={onChange} id="exampleInputPassword1"/>
+    <label htmlFor="exampleInput1" className="form-label">Address</label>
+    <input type="text" className="form-control" name='geolocation' value={credentials.geolocation} onChange={onChange} id="exampleInput1"/>
   </div>
   <button type="submit" className="btn btn-primary">Submit</button>
   <Link to='/login' className='m-3 btn btn-danger'>Already a User</Link>
