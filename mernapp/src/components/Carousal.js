@@ -3,6 +3,7 @@ import React from 'react'
 
 export default function Carousal() {
   return (
+    <div>
     <div><div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel" style={{objectFit:"contain !important"}}>
     <div className="carousel-inner" id='carousel'>
       <div className='carousel-caption' style={{zIndex:"10"}}>
@@ -29,6 +30,7 @@ export default function Carousal() {
       <span className="carousel-control-next-icon" aria-hidden="true"></span>
       <span className="visually-hidden">Next</span>
     </button>
+    </div>
   </div></div>
   )
 }
